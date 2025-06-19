@@ -11,4 +11,5 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          curl -H "Content-Type: application/json" -X POST -d "{\"content\":\"Mensagem de teste via GitHub Actions\"}" $DISCORD_WEBHOOK
+          MESSAGE='{"content":"Mensagem de teste via GitHub Actions"}'
+          curl -H "Content-Type: application/json" -X POST -d "$MESSAGE" $DISCORD_WEBHOOK

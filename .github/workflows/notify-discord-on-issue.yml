@@ -1,17 +1,14 @@
-name: Notificar Discord quando nova issue for criada
+name: Teste manual do webhook Discord
 
 on:
-  issues:
-    types: [opened]
+  workflow_dispatch:
 
 jobs:
-  notify:
+  send-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Enviar para o Discord
+      - name: Enviar mensagem de teste para Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          curl -X POST -H "Content-Type: application/json" \
-          -d "{\"content\": \"📬 Nova issue criada por **${{ github.actor }}**:\n**${{ github.event.issue.title }}**\n🔗 ${{ github.event.issue.html_url }}\"}" \
-          $DISCORD_WEBHOOK
+          curl -H "Content-Type: application/json" -X POST -d "{\"content\":\"Mensagem de teste via GitHub Actions\"}" $DISCORD_WEBHOOK

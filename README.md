@@ -61,7 +61,7 @@
 
 # 📋 Features
 
-<img width="550" alt="image" src="https://scp222thj.dev/static/images/malumIngame.png">
+<img width="550" alt="image" src="hack1.PNG">
 
 - An intuitive GUI with our latest, greatest Among Us cheats
 - See ghosts & reveal the impostors

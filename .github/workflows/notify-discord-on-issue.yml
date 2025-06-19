@@ -6,10 +6,12 @@ on:
 jobs:
   send-test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Enviar mensagem de teste para Discord
+      - name: Enviar mensagem de teste para Discord (com segredo)
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: |
-          curl -H "Content-Type: application/json" -X POST -d "{\"content\":\"✅ Mensagem de teste via GitHub Actions ✅\"}" "$DISCORD_WEBHOOK"
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\":\"✅ Mensagem de teste via GitHub Actions ✅\"}" \
+          "$DISCORD_WEBHOOK"

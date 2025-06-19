@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/Join%20us%20on-Discord-blue?style=flat&logo=discord" alt="Discord">
   </a>
   
-  <a href="https://www.paypal.com/paypalme/lucasoliveiram">
+  <a href="https://www.paypal.com/paypalme/">
     <img src="https://img.shields.io/badge/PayPal-003087?logo=paypal&logoColor=fff" alt="Paypal">
   </a>
 

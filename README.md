@@ -1,5 +1,5 @@
 
-<p align="center">git init 
+<p align="center">ShowMenu by Showblack
   <img src="logo.png">
 </p>
 

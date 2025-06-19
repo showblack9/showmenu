@@ -1,13 +1,12 @@
 # These are supported funding model platforms
 
 github: [] # Ex: [user1, user2]
-patreon: 
-open_collective: 
-paypal: lucasoliveiram
-tidelift: 
-community_bridge: 
-liberapay: 
-issuehunt: 
-otechie: 
-lfx_crowdfunding: 
-custom: 'https://www.paypal.com/paypalme/showblack'
+patreon:
+open_collective:
+tidelift:
+community_bridge:
+liberapay:
+issuehunt:
+otechie:
+lfx_crowdfunding:
+custom: ['https://www.paypal.com/paypalme/showblack', 'https://www.paypal.com/paypalme/lucasoliveiram']
